@@ -1,0 +1,211 @@
+body{ 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0%;
+}
+body > header { 
+    background-image: url('./pics/background-grey.jpg');
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;   
+    height: 100%;
+    margin-bottom: 1em;
+}
+.topbar { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+header ul { 
+    display: flex;
+    list-style: none;
+}
+header ul li { 
+    margin-right: 1em
+}
+/* links top right */
+.topbar nav ul li a{  
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 500;
+}
+/* logo */
+.topbar img{ 
+    width: 60px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.topbar-text { 
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+    margin-top: 1em;
+    color: white;
+   
+}
+.button { 
+    display: flex;
+    justify-content: center;
+}
+
+.services { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1em;
+    margin-bottom: 1em ;
+    margin-left: 1em;
+
+}
+.servbox h3{ 
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+}
+.servbox p{ 
+   text-align: justify;
+   width: 100%;
+   max-width: 300px;
+}
+
+.servbox img{ 
+    height: 100%;
+    width: 100%;
+    max-width: 300px;
+    max-height: 300px; 
+    object-fit: cover;
+    min-width: 50px;
+    min-height: 300px;
+}
+
+.schedule{ 
+    background-image: url('./pics/background-grey.jpg');
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;   
+    height: 220px;
+    margin-bottom: 1em;
+}
+
+.gallerybox h1{ 
+    text-align: center;
+     
+}
+
+.container{
+   
+    width: 100%;
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template:  "1fr 1fr 1fr 1fr 1fr" 33.33vh
+                    "1fr 1fr 1fr 1fr 1fr" 33.33vh
+                    "1fr 1fr 1fr 1fr 1fr" 33.33vh;
+    grid-gap: 5px;  
+}
+
+.container .image{
+    position: relative;
+    background: rgb(201, 191, 191);
+}
+
+.container .image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+@media(max-width: 991px){
+    .container{
+
+        grid-template:  "1fr 1fr 1fr" 250px
+                        "1fr 1fr 1fr" 250px
+                        "1fr 1fr 1fr" 250px
+                        "1fr 1fr 1fr" 250px
+                        "1fr 1fr 1fr" 250px;
+        grid-gap: 5px;  
+    }
+}
+@media(max-width: 768px){
+    .container{
+
+        grid-template:  "1fr 1fr" 200px
+                        "1fr 1fr" 200px
+                        "1fr 1fr" 200px
+                        "1fr 1fr" 200px
+                        "1fr 1fr" 200px
+                        "1fr 1fr" 200px
+                        "1fr 1fr" 200px;
+        grid-gap: 5px;  
+    }
+}
+
+.container .image.a{
+    grid-row: span 2;
+}
+.container .image.b,
+.container .image.f,
+.container .image.h,
+.container .image.j{
+    grid-column: span 2;
+}
+
+
+.team{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1em;
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    
+}
+.team div img{ 
+    height: 100%;
+    width: 100%;
+    max-width: 300px;
+    max-height: 300px; 
+    object-fit: cover;
+    min-width: 50px;
+    min-height: 300px;
+}
+
+.team div h3{ 
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+}
+.team div p{ 
+   text-align: justify;
+   width: 100%;
+   max-width: 300px;
+  
+}
+
+footer{ 
+    background-image: url('./pics/background-grey.jpg');
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    padding: 10px;
+
+}
+
+.map{ 
+    object-fit: cover;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    height: 200px;
+
+}
+
+ .bottom-text{ 
+    display: flex;
+    gap: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    justify-content: space-between;
+   
+ }
